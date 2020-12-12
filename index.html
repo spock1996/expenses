@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expances tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Expense Tracker v1.1</h2>
+
+    <div class="container">
+        <p class="text-primary">Your Balance</p>
+        <p class="balance" id="balance">$0.00</p>
+
+        <div class="moneyFlow" id="moneyFlow">
+        <div class="income"><p class="text-primary">Income</p>
+        <p id="income">+$0.00</p>
+        </div>
+
+        <div class="expense"><p class="text-primary">Expense</p>
+            <p id="expense">-$0.00</p>
+        </div>
+        </div>
+
+        <div class="history" id="history">
+            <p class="text-primary">History</p>
+            <ul class="list" id="list">
+                <!-- <li class="minus">Breed <span>-$1.50</span><button class="delete-btn">X</button></li> -->
+            </ul>
+        </div>
+
+    <div class="add" id="add">
+        <p class="text-primary">Add new transaction</p>
+
+        <form>
+            <div>
+            <label for="item">Text</label>
+            <input type="text" id="itemName" placeholder="Enter Text...">
+        </div>
+        <div>
+            <label for="amount">Amount</label>
+            <input type="number" id="itemAmount" placeholder="Enter Amount...">
+        </div>
+        <button class="add-value" id="add-value">Add transaction</button>
+        </form>
+    </div>
+</div>
+
+   
+
+
+    <script src="appOOP.js"></script>
+</body>
+</html>
